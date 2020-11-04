@@ -16,3 +16,9 @@ C:\Users\fer_b\Downloads\NotasDeMaterias\Backend\obj\Debug\Backend.csprojAssembl
 C:\Users\fer_b\Downloads\NotasDeMaterias\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
 C:\Users\fer_b\Downloads\NotasDeMaterias\Backend\obj\Debug\Backend.dll
 C:\Users\fer_b\Downloads\NotasDeMaterias\Backend\obj\Debug\Backend.pdb
+C:\Programación\NotasDeMaterias\Backend\bin\Debug\Backend.dll
+C:\Programación\NotasDeMaterias\Backend\bin\Debug\Backend.pdb
+C:\Programación\NotasDeMaterias\Backend\obj\Debug\Backend.csprojAssemblyReference.cache
+C:\Programación\NotasDeMaterias\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
+C:\Programación\NotasDeMaterias\Backend\obj\Debug\Backend.dll
+C:\Programación\NotasDeMaterias\Backend\obj\Debug\Backend.pdb

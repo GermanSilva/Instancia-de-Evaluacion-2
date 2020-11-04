@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.btnEliminar = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.dgvNotas = new System.Windows.Forms.DataGridView();
             this.btnVolver = new FontAwesome.Sharp.IconButton();
@@ -39,6 +38,8 @@
             this.lblDetalle = new System.Windows.Forms.Label();
             this.txtDetalle = new System.Windows.Forms.TextBox();
             this.lblFecha = new System.Windows.Forms.Label();
+            this.btnGuardarEdit = new FontAwesome.Sharp.IconButton();
+            this.btnEliminar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,32 +54,6 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(135, 29);
             this.dtpFecha.TabIndex = 8;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.BackColor = System.Drawing.Color.DimGray;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnEliminar.IconColor = System.Drawing.Color.Red;
-            this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEliminar.IconSize = 25;
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnEliminar.Location = new System.Drawing.Point(20, 470);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Rotation = 0D;
-            this.btnEliminar.Size = new System.Drawing.Size(760, 36);
-            this.btnEliminar.TabIndex = 6;
-            this.btnEliminar.Text = "ELIMINAR FILA SELECCIONADA";
-            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAgregar
             // 
@@ -110,33 +85,32 @@
             this.dgvNotas.AllowUserToAddRows = false;
             this.dgvNotas.AllowUserToDeleteRows = false;
             this.dgvNotas.AllowUserToResizeColumns = false;
-            this.dgvNotas.AllowUserToResizeRows = false;
             this.dgvNotas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvNotas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvNotas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgvNotas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvNotas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dgvNotas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvNotas.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dgvNotas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvNotas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNotas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvNotas.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNotas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvNotas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvNotas.EnableHeadersVisualStyles = false;
             this.dgvNotas.GridColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -148,10 +122,13 @@
             this.dgvNotas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvNotas.RowHeadersVisible = false;
             this.dgvNotas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvNotas.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvNotas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvNotas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNotas.Size = new System.Drawing.Size(760, 316);
+            this.dgvNotas.Size = new System.Drawing.Size(760, 357);
             this.dgvNotas.TabIndex = 10;
+            this.dgvNotas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNotas_CellClick);
+            this.dgvNotas.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvNotas_ColumnHeaderMouseClick);
             // 
             // btnVolver
             // 
@@ -233,12 +210,65 @@
             this.lblFecha.Text = "FECHA";
             this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnGuardarEdit
+            // 
+            this.btnGuardarEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarEdit.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGuardarEdit.FlatAppearance.BorderSize = 0;
+            this.btnGuardarEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarEdit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnGuardarEdit.Font = new System.Drawing.Font("Trebuchet MS", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarEdit.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarEdit.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.btnGuardarEdit.IconColor = System.Drawing.Color.White;
+            this.btnGuardarEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGuardarEdit.IconSize = 20;
+            this.btnGuardarEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardarEdit.Location = new System.Drawing.Point(609, 78);
+            this.btnGuardarEdit.Margin = new System.Windows.Forms.Padding(0);
+            this.btnGuardarEdit.Name = "btnGuardarEdit";
+            this.btnGuardarEdit.Rotation = 0D;
+            this.btnGuardarEdit.Size = new System.Drawing.Size(171, 27);
+            this.btnGuardarEdit.TabIndex = 7;
+            this.btnGuardarEdit.Text = "GUARDAR EDICIÓN";
+            this.btnGuardarEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardarEdit.UseVisualStyleBackColor = false;
+            this.btnGuardarEdit.Click += new System.EventHandler(this.btnGuardarEdit_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnEliminar.Font = new System.Drawing.Font("Trebuchet MS", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnEliminar.IconColor = System.Drawing.Color.White;
+            this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnEliminar.IconSize = 20;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.Location = new System.Drawing.Point(609, 107);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Rotation = 0D;
+            this.btnEliminar.Size = new System.Drawing.Size(171, 27);
+            this.btnEliminar.TabIndex = 7;
+            this.btnEliminar.Text = "ELIMINAR NOTA";
+            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // Notas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(800, 526);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnGuardarEdit);
             this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblDetalle);
@@ -246,8 +276,6 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dgvNotas);
             this.Controls.Add(this.dtpFecha);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnAgregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Notas";
             this.Text = "Notas";
@@ -260,7 +288,6 @@
 
         #endregion
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private FontAwesome.Sharp.IconButton btnEliminar;
         private FontAwesome.Sharp.IconButton btnAgregar;
         private System.Windows.Forms.DataGridView dgvNotas;
         private FontAwesome.Sharp.IconButton btnVolver;
@@ -268,5 +295,7 @@
         private System.Windows.Forms.Label lblDetalle;
         private System.Windows.Forms.TextBox txtDetalle;
         private System.Windows.Forms.Label lblFecha;
+        private FontAwesome.Sharp.IconButton btnGuardarEdit;
+        private FontAwesome.Sharp.IconButton btnEliminar;
     }
 }

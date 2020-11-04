@@ -1,2 +1,17 @@
 <?xml version="1.0" standalone="yes"?>
-<DocumentElement />
+<DocumentElement>
+  <Materias>
+    <Nombre>matematica y lógica</Nombre>
+    <A>255</A>
+    <R>255</R>
+    <G>128</G>
+    <B>64</B>
+  </Materias>
+  <Materias>
+    <Nombre>fisica</Nombre>
+    <A>255</A>
+    <R>0</R>
+    <G>128</G>
+    <B>192</B>
+  </Materias>
+</DocumentElement>

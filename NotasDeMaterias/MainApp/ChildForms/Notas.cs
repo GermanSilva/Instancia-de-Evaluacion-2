@@ -36,7 +36,8 @@ namespace MainApp.ChildForms
             {
                 lblDetalle.Text = "DETALLE";
                 lblDetalle.ForeColor = Color.White;
-                notas.GuardarNota(txtDetalle.Text, dtpFecha.Text, materia.Nombre());
+                notas.AñadirNota(txtDetalle.Text, dtpFecha.Text, materia.Nombre());
+                txtDetalle.Text = "";
             }
             else
             {
@@ -51,12 +52,42 @@ namespace MainApp.ChildForms
             if (dgvNotas.SelectedRows.Count != 0)
             {
                 notas.EliminarNota(dgvNotas.SelectedRows[0].Index, materia.Nombre());
+                txtDetalle.Text = "";
+                dtpFecha.Value = DateTime.Now;
+                btnAgregar.Visible = true;
             }
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvNotas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtDetalle.Text = dgvNotas.SelectedCells[0].Value.ToString();
+            dtpFecha.Value = Convert.ToDateTime(dgvNotas.SelectedCells[1].Value);
+            btnAgregar.Visible = false;
+        }
+
+        private void btnGuardarEdit_Click(object sender, EventArgs e)
+        {
+            notas.GuardarNota(dgvNotas.SelectedRows[0].Index, txtDetalle.Text, dtpFecha.Text, materia.Nombre());
+            txtDetalle.Text = "";
+            dtpFecha.Value = DateTime.Now;
+            btnAgregar.Visible = true;
+        }
+
+        private void dgvNotas_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            for (int i = 0; i < notas.tabla.Rows.Count; i++)
+            {
+                notas.ReordenarNotas(
+                    dgvNotas.Rows[i].Cells[0].Value.ToString(),
+                    dgvNotas.Rows[i].Cells[1].Value.ToString());
+            }
+            notas.FinReorden(materia.Nombre());
+            dgvNotas.Refresh();
         }
     }
 }

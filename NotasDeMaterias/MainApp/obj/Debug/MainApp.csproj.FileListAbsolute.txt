@@ -1,0 +1,17 @@
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\bin\Debug\MainApp.exe.config
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\bin\Debug\MainApp.exe
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\bin\Debug\MainApp.pdb
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.csprojAssemblyReference.cache
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.MainForm.resources
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.Properties.Resources.resources
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.csproj.GenerateResource.cache
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.cache
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.csproj.CopyComplete
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.exe
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.pdb
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.frmProgramacion.resources
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.frmAco.resources
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.frmSistemas.resources
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.frmMatematica.resources
+C:\Users\germa\source\repos\MemoriaDeMaterias\MainApp\obj\Debug\MainApp.frmIngles.resources

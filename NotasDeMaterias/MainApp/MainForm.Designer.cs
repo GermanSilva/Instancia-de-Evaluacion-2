@@ -171,7 +171,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.contForms);
             this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(800, 275);
+            this.MinimumSize = new System.Drawing.Size(800, 274);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

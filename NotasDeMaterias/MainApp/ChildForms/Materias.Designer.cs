@@ -55,11 +55,11 @@
             this.pnlMenor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.pnlMenor.Controls.Add(this.pnlControles);
             this.pnlMenor.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlMenor.Location = new System.Drawing.Point(0, 311);
+            this.pnlMenor.Location = new System.Drawing.Point(0, 383);
             this.pnlMenor.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlMenor.MinimumSize = new System.Drawing.Size(0, 139);
+            this.pnlMenor.MinimumSize = new System.Drawing.Size(0, 171);
             this.pnlMenor.Name = "pnlMenor";
-            this.pnlMenor.Size = new System.Drawing.Size(800, 139);
+            this.pnlMenor.Size = new System.Drawing.Size(1067, 171);
             this.pnlMenor.TabIndex = 4;
             this.pnlMenor.Click += new System.EventHandler(this.RC2);
             // 
@@ -75,10 +75,10 @@
             this.pnlControles.Controls.Add(this.btnGuardar);
             this.pnlControles.Controls.Add(this.txtNombre);
             this.pnlControles.Controls.Add(this.btnEliminar);
-            this.pnlControles.Location = new System.Drawing.Point(25, 25);
+            this.pnlControles.Location = new System.Drawing.Point(33, 31);
             this.pnlControles.Margin = new System.Windows.Forms.Padding(0);
             this.pnlControles.Name = "pnlControles";
-            this.pnlControles.Size = new System.Drawing.Size(750, 89);
+            this.pnlControles.Size = new System.Drawing.Size(1000, 110);
             this.pnlControles.TabIndex = 6;
             // 
             // lblColor
@@ -87,11 +87,11 @@
             this.lblColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.lblColor.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColor.ForeColor = System.Drawing.Color.White;
-            this.lblColor.Location = new System.Drawing.Point(422, 31);
+            this.lblColor.Location = new System.Drawing.Point(563, 38);
             this.lblColor.Margin = new System.Windows.Forms.Padding(0);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblColor.Size = new System.Drawing.Size(156, 29);
+            this.lblColor.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.lblColor.Size = new System.Drawing.Size(208, 36);
             this.lblColor.TabIndex = 0;
             this.lblColor.Text = "COLOR";
             this.lblColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,11 +103,11 @@
             this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.lblNombre.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(0, 31);
+            this.lblNombre.Location = new System.Drawing.Point(0, 38);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblNombre.Size = new System.Drawing.Size(417, 29);
+            this.lblNombre.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.lblNombre.Size = new System.Drawing.Size(556, 36);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "NOMBRE DE MATERIA";
             this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,12 +125,12 @@
             this.btnAñadir.IconColor = System.Drawing.Color.White;
             this.btnAñadir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAñadir.IconSize = 22;
-            this.btnAñadir.Location = new System.Drawing.Point(584, 0);
+            this.btnAñadir.Location = new System.Drawing.Point(779, 0);
             this.btnAñadir.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAñadir.MaximumSize = new System.Drawing.Size(166, 89);
+            this.btnAñadir.MaximumSize = new System.Drawing.Size(221, 110);
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Rotation = 0D;
-            this.btnAñadir.Size = new System.Drawing.Size(166, 89);
+            this.btnAñadir.Size = new System.Drawing.Size(221, 110);
             this.btnAñadir.TabIndex = 5;
             this.btnAñadir.Text = "AÑADIR";
             this.btnAñadir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -148,7 +148,7 @@
             this.lblInfo.Location = new System.Drawing.Point(0, 0);
             this.lblInfo.Margin = new System.Windows.Forms.Padding(0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(578, 26);
+            this.lblInfo.Size = new System.Drawing.Size(771, 32);
             this.lblInfo.TabIndex = 0;
             this.lblInfo.Text = "PARA AGREGAR UNA MATERIA, INGRESA NOMBRE Y SELECCIONA UN COLOR";
             this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,16 +160,16 @@
             this.btnColor.FlatAppearance.BorderSize = 0;
             this.btnColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnColor.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnColor.IconColor = System.Drawing.Color.Black;
             this.btnColor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnColor.IconSize = 48;
-            this.btnColor.Location = new System.Drawing.Point(422, 60);
+            this.btnColor.Location = new System.Drawing.Point(563, 74);
             this.btnColor.Margin = new System.Windows.Forms.Padding(0);
             this.btnColor.Name = "btnColor";
             this.btnColor.Rotation = 0D;
-            this.btnColor.Size = new System.Drawing.Size(156, 29);
+            this.btnColor.Size = new System.Drawing.Size(208, 36);
             this.btnColor.TabIndex = 1;
             this.btnColor.Text = "SIN SELECCIONAR";
             this.btnColor.UseVisualStyleBackColor = false;
@@ -188,11 +188,11 @@
             this.btnGuardar.IconColor = System.Drawing.Color.White;
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardar.IconSize = 22;
-            this.btnGuardar.Location = new System.Drawing.Point(584, 0);
+            this.btnGuardar.Location = new System.Drawing.Point(779, 0);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(0);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Rotation = 0D;
-            this.btnGuardar.Size = new System.Drawing.Size(166, 41);
+            this.btnGuardar.Size = new System.Drawing.Size(221, 50);
             this.btnGuardar.TabIndex = 5;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -206,11 +206,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(0, 60);
+            this.txtNombre.Location = new System.Drawing.Point(0, 74);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(0);
             this.txtNombre.MinimumSize = new System.Drawing.Size(2, 20);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(417, 29);
+            this.txtNombre.Size = new System.Drawing.Size(556, 34);
             this.txtNombre.TabIndex = 3;
             // 
             // btnEliminar
@@ -226,11 +226,11 @@
             this.btnEliminar.IconColor = System.Drawing.Color.White;
             this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminar.IconSize = 22;
-            this.btnEliminar.Location = new System.Drawing.Point(584, 48);
+            this.btnEliminar.Location = new System.Drawing.Point(779, 59);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(0);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Rotation = 0D;
-            this.btnEliminar.Size = new System.Drawing.Size(166, 41);
+            this.btnEliminar.Size = new System.Drawing.Size(221, 50);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -245,10 +245,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMaterias.AutoScroll = true;
             this.pnlMaterias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.pnlMaterias.Location = new System.Drawing.Point(25, 49);
+            this.pnlMaterias.Location = new System.Drawing.Point(33, 60);
             this.pnlMaterias.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMaterias.Name = "pnlMaterias";
-            this.pnlMaterias.Size = new System.Drawing.Size(750, 262);
+            this.pnlMaterias.Size = new System.Drawing.Size(1000, 322);
             this.pnlMaterias.TabIndex = 2;
             // 
             // pnlMayor
@@ -259,8 +259,9 @@
             this.pnlMayor.Controls.Add(this.pnlMaterias);
             this.pnlMayor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMayor.Location = new System.Drawing.Point(0, 0);
+            this.pnlMayor.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMayor.Name = "pnlMayor";
-            this.pnlMayor.Size = new System.Drawing.Size(800, 311);
+            this.pnlMayor.Size = new System.Drawing.Size(1067, 383);
             this.pnlMayor.TabIndex = 5;
             this.pnlMayor.Click += new System.EventHandler(this.RC2);
             // 
@@ -270,11 +271,11 @@
             this.lblAyudaMaterias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.lblAyudaMaterias.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAyudaMaterias.ForeColor = System.Drawing.Color.Silver;
-            this.lblAyudaMaterias.Location = new System.Drawing.Point(441, 20);
+            this.lblAyudaMaterias.Location = new System.Drawing.Point(588, 25);
             this.lblAyudaMaterias.Margin = new System.Windows.Forms.Padding(0);
             this.lblAyudaMaterias.Name = "lblAyudaMaterias";
-            this.lblAyudaMaterias.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.lblAyudaMaterias.Size = new System.Drawing.Size(334, 29);
+            this.lblAyudaMaterias.Padding = new System.Windows.Forms.Padding(0, 0, 13, 0);
+            this.lblAyudaMaterias.Size = new System.Drawing.Size(445, 36);
             this.lblAyudaMaterias.TabIndex = 0;
             this.lblAyudaMaterias.Text = "[CLICK PARA EDITAR - DOBLE CLICK PARA INGRESAR]";
             this.lblAyudaMaterias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -286,11 +287,11 @@
             this.lblMaterias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.lblMaterias.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaterias.ForeColor = System.Drawing.Color.White;
-            this.lblMaterias.Location = new System.Drawing.Point(25, 20);
+            this.lblMaterias.Location = new System.Drawing.Point(33, 25);
             this.lblMaterias.Margin = new System.Windows.Forms.Padding(0);
             this.lblMaterias.Name = "lblMaterias";
-            this.lblMaterias.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblMaterias.Size = new System.Drawing.Size(416, 29);
+            this.lblMaterias.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.lblMaterias.Size = new System.Drawing.Size(555, 36);
             this.lblMaterias.TabIndex = 0;
             this.lblMaterias.Text = "MATERIAS ";
             this.lblMaterias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -303,13 +304,14 @@
             // 
             // Materias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.pnlMayor);
             this.Controls.Add(this.pnlMenor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Materias";
             this.Text = "Materias";
             this.Load += new System.EventHandler(this.Materias_Load);
